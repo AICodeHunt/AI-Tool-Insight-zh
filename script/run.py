@@ -82,15 +82,18 @@ async def get_all_content(executor):
 
 async def main():
     print("""# AI-Tool-Insight
+AI Tool Insight 旨在为大家提供最新 AI 资讯，助力创造未来无限可能
+每日更新，欢迎大家每天来看看又有什么新的好玩的AI工具  
+网站：https://www.aitoolinsight.com
+## 🏠微信 & 知识星球
+加入社群，与AI技术领域的专家和爱好者一起探讨最前沿的信息！在这里，你可以体验到最先进的人工智能技术，与志同道合的人交流，共同提升你的知识水平。不管你是专业人士还是爱好者，都欢迎加入我们的群体！  
+<div style="display: flex;">
+<img src="https://user-images.githubusercontent.com/1826685/232313468-cd46d9bc-35ad-4242-a7b4-99a6cc58d2d2.png" width="49%" style="flex: 1" />
+<img src="https://user-images.githubusercontent.com/1826685/232313476-665c63de-8680-4bd3-a571-34cc03724083.png" width="49%"  style="flex: 1" />
+</div>
 
-AI Tool Insight aims to provide you with the latest AI information and help create infinite possibilities in the future
-Daily updates, welcome everyone to come and see what new and interesting AI tools are available every day  
-website：https://www.aitoolinsight.com
-## 🏠Discord
-Join the Discord community and discuss the most cutting-edge information with experts and enthusiasts in the field of AI technology! Here, you can experience the most advanced artificial intelligence technology, communicate with like-minded people, and jointly improve your knowledge level. Whether you are a professional or a hobbyist, welcome to join our community!  
-👉 https://discord.gg/xZj9Px7Xvd
-## 🔥What's new today
-| Name | Description | Website | Screenshot | Pricing | Category |
+## 🔥今日更新
+| 工具名称 | 工具描述| 网站链接 | 网站截图 | 工具价格 | 分类 |
 |---|---|---|---|---|---|""")
     async for item in get_recent():
         # print(item['_id'], item['title'])
@@ -98,8 +101,8 @@ Join the Discord community and discuss the most cutting-edge information with ex
 
     # print('--------------')
     print("""
-## 📖All AI Tools
-| Name | Description | Website | Screenshot | Pricing | Category |
+## 📖全部工具
+| 工具名称 | 工具描述| 网站链接 | 网站截图 | 工具价格 | 分类 |
 |---|---|---|---|---|---|""")
     async for item in get_all_content(get_tools_by_page):
         # print(item['_id'], item['toolName'])
