@@ -53,7 +53,7 @@ def format_tool(item):
     return '|{} |{} |{} |{} |{} |{} |'.format(
         item['toolName'].replace('|', ' '),
         item['toolShortDescription'].replace('|', ' '),
-        '[{}]({})'.format('visit website', item['websiteUrl']),
+        '[{}]({})'.format('网站链接', item['websiteUrl']),
         '![]({})'.format(image) if image else '',
         '$ {}'.format(price) if price else '',
         # ' '.join(['`{}`'.format(p) for p in item['pricing']]),
